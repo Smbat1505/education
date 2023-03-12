@@ -1,0 +1,32 @@
+.app-wrapper {
+  display: grid;
+
+  grid-template-areas:
+    "header header"
+    "nav body";
+
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
+}
+.header {
+  grid-area: header;
+  background-color: #794f45;
+}
+.header img {
+  width: 5rem;
+  /* transform: rotate(90deg);  */
+}
+.navigation {
+  grid-area: nav;
+  background-color: #77608d;
+}
+
+.body-app {
+  grid-area: body;
+  background-color: rgba(122, 149, 107);
+}
+.body-app img {
+  width: 100%;
+  /* height: 50%; */
+}
